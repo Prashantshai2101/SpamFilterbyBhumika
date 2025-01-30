@@ -13,7 +13,7 @@ vectorizer = TfidfVectorizer(stop_words='english')
 
 # Fit the vectorizer to our dataset and transform it
 X = vectorizer.fit_transform(df['Text'])
-y = df['label']
+y = df['Label']
 
 # Split the dataset into training and testing sets
 X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42)
