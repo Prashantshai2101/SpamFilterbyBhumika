@@ -12,7 +12,7 @@ df = pd.read_csv('spambase.csv')
 vectorizer = TfidfVectorizer(stop_words='english')
 
 # Fit the vectorizer to our dataset and transform it
-X = vectorizer.fit_transform(df['text'])
+X = vectorizer.fit_transform(df['Text'])
 y = df['label']
 
 # Split the dataset into training and testing sets
